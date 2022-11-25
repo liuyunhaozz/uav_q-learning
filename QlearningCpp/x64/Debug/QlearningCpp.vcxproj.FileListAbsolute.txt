@@ -1,0 +1,2 @@
+D:\DUT\home\drone_Q_learning\QlearningCpp\x64\Debug\QlearningCpp.exe
+D:\DUT\home\drone_Q_learning\QlearningCpp\x64\Debug\QlearningCpp.pdb

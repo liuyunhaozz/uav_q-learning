@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\DUT\home\drone_Q_learning\QlearningCpp\constants.h(50,41): warning C4309: “初始化”: 截断常量值
+  QlearningCpp.vcxproj -> D:\DUT\home\drone_Q_learning\QlearningCpp\x64\Debug\QlearningCpp.exe
