@@ -78,8 +78,7 @@ By addressing these potential improvements and expanding the scope of the projec
 
 [5] [Fastor-wiki](https://github.com/romeric/Fastor/wiki/Getting-Started)
 
-[6] [Optimizing-UAV-trajectory-for-maximum-data-rate-via-Q-Learning](https://github.com/khinthandarkyaw98/Optimizing-UAV-trajectory-for-maximum-
-data-rate-via-Q-Learning)
+[6] [Optimizing-UAV-trajectory-for-maximum-data-rate-via-Q-Learning](https://github.com/khinthandarkyaw98/Optimizing-UAV-trajectory-for-maximum-data-rate-via-Q-Learning)
 
 [7] [Airsim detailed tutorial (1): Configuring Airsim simulation environment on Win10 (updated on August 12, 2021)](https://zhuanlan.zhihu.com/p/267321662)
 
