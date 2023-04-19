@@ -1,12 +1,12 @@
 # Autonomous Obstacle Avoidance of UAV based on Q-Learning
 
-![ue4_drone](/Users/yunhao/Public/uav_q-learning/assets/ue4_drone.gif)
+![ue4_drone](assets/ue4_drone.gif)
 
 ## Introduction
 
 The goal of our course project is to use the Q-Learning algorithm for UAV path planning, detecting and recording the signal strength value of each wireless router when the UAV is right above it. We achieve intelligent route planning for the UAV by implementing maximum data rate transmission with the router while avoiding obstacles. We also make use of the basic object-oriented features of the C++ language taught in this course for practice. In the code part, we adopted object-oriented programming concepts. In the research of the UAV route planning framework structure, a UAV class is defined, including flight radius, level flight speed, vertical flight speed, maximum and minimum flight altitude, etc., which embodies the concept of class and object; in the discussion of static global planning and dynamic local planning methods, two types of environment classes, obstacle class and router class, are defined as the simulation environment of the algorithm, realizing inheritance and polymorphism.
 
-![image-20230419200801420](/Users/yunhao/Public/uav_q-learning/assets/image-20230419200801420.png)
+![image-20230419200801420](assets/image-20230419200801420.png)
 
 
 
@@ -27,13 +27,13 @@ In this experiment, the main tools we use are:
 
 First, we created an environment for the UAV in Unreal Engine, initializing it as a 7x7 grid with each grid cell measuring 10m. Next, we set different buildings as obstacles in this environment. We divide the altitudes of the buildings into three levels: 60m, 150m, and 250m. There are two 60m obstacles, eight 150m obstacles, and two 250m obstacles. Finally, we set up five routers in the environment, represented by white spheres in the scene. The UAV's route must pass through all five routers while avoiding obstacles to achieve the optimal path. The positions of the buildings and routers are random.
 
-![image-20230419200814072](/Users/yunhao/Public/uav_q-learning/assets/image-20230419200814072.png)
+![image-20230419200814072](assets/image-20230419200814072.png)
 
 ### Initializing UAV
 
 In this experiment, we defined a UAV. We used fuel to define the UAV's flight radius. Then we initialized the UAV's flight speed and level flight speed to be 3 meters/second and the vertical flight speed to be 3 m/s. At the same time, we set three flight altitudes for the UAV: 50m, 125m, and 200m. Finally, we set the UAV to perform six actions: moving forward, backward, left, right, up, and down.
 
-![image-20230419200821051](/Users/yunhao/Public/uav_q-learning/assets/image-20230419200821051.png)
+![image-20230419200821051](assets/image-20230419200821051.png)
 
 ### Training the UAV
 
@@ -43,13 +43,13 @@ To optimize the UAV's path, we used the Q-learning algorithm. The Q-learning alg
 
 After training, we used the obtained Q-Table and the Q-learning algorithm for UAV path planning. We used the Airsim API to control the UAV in the UE 4 engine for demonstration, achieving good results.
 
-![image-20230419200834045](/Users/yunhao/Public/uav_q-learning/assets/image-20230419200834045.png)
+![image-20230419200834045](assets/image-20230419200834045.png)
 
 Next, we changed the positions of the obstacles, retrained, and revalidated. The results show that the UAV can accurately traverse all routers in different environments, indicating that the model has good robustness.
 
-![image-20230419200900691](/Users/yunhao/Public/uav_q-learning/assets/image-20230419200900691.png)
+![image-20230419200900691](assets/image-20230419200900691.png)
 
-![image-20230419200908285](/Users/yunhao/Public/uav_q-learning/assets/image-20230419200908285.png)
+![image-20230419200908285](assets/image-20230419200908285.png)
 
 
 
@@ -69,15 +69,25 @@ By addressing these potential improvements and expanding the scope of the projec
 ## References
 
 [1] [Practical Reinforcement Learning — 02 Getting started with Q-learning](https://towardsdatascience.com/practical-reinforcement-learning-02-getting-started-with-q-learning-582f63e4acd9)
+
 [2] [Communication basics: The relationship between baud rate, data transmission rate, and bandwidth](https://blog.csdn.net/xchbx/article/details/11537951)
+
 [3] [Epic Games Unreal Engine 4 Documentation](https://docs.unrealengine.com/4.27/en-US/)
+
 [4] [Microsoft Airsim Documentation](https://microsoft.github.io/AirSim/)
+
 [5] [Fastor-wiki](https://github.com/romeric/Fastor/wiki/Getting-Started)
+
 [6] [Optimizing-UAV-trajectory-for-maximum-data-rate-via-Q-Learning](https://github.com/khinthandarkyaw98/Optimizing-UAV-trajectory-for-maximum-
 data-rate-via-Q-Learning)
+
 [7] [Airsim detailed tutorial (1): Configuring Airsim simulation environment on Win10 (updated on August 12, 2021)](https://zhuanlan.zhihu.com/p/267321662)
+
 [8] [Airsim series (Five) - Controlling quadcopter flight (core API)](https://zhuanlan.zhihu.com/p/307956920)
+
 [9] [Q learning - epsilon greedy update](https://stackoverflow.com/questions/48583396/q-learning-epsilon-greedy-update)
+
 [10] [How to Set Up a Grid for Level and Game Design Metrics](https://www.youtube.com/watch?v=KSXshiA59OA&ab_channel=TylerMcCombs)
+
 [11] [6.9 — Sharing global constants across multiple files (using inline variables)](https://www.learncpp.com/cpp-tutorial/sharing-global-constants-across-multiple-files-using-inline-variables/)
 
